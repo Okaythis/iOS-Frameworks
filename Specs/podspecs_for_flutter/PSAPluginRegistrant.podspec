@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'PSAPluginRegistrant'
-  s.version               = '1.0.2'
+  s.version               = '1.0.3'
   s.summary               = 'App Framework'
   s.description           = <<-DESC
   This is the compiled UI module for Okaythis SDK
@@ -37,9 +37,10 @@ LICENSE
   s.author                = { 'Okaythis Dev Team' => 'support@okaythis.com' }
   s.source                = { :http => 'https://github.com/Okaythis/iOS-Frameworks/raw/c3d8ed8479e84212489fb861733213470c599100/PSAPluginRegistrant.zip' }
   s.documentation_url     = 'https://okaythis.com/developer'
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
   s.pod_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
   s.user_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
+  s.pod_target_xcconfig = { "ONLY_ACTIVE_ARCH" => "YES" }
   s.vendored_frameworks   = 'FlutterPluginRegistrant.xcframework'
 
 end

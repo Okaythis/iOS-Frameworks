@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'PSAFlutter'
-  s.version               = '2.2.101' # 2.2.1
+  s.version               = '2.2.2'
   s.summary               = 'Flutter Engine Framework'
   s.description           = <<-DESC
 Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
@@ -40,8 +40,9 @@ LICENSE
   s.author                = { 'Flutter Dev Team' => 'flutter-dev@googlegroups.com' }
   s.source                = { :http => 'https://storage.googleapis.com/flutter_infra_release/flutter/0fdb562ac8068ce3dda6b69aca3f355f4d1d2718/ios-release/artifacts.zip' }
   s.documentation_url     = 'https://flutter.dev/docs'
-  s.platform              = :ios, '8.0'
+  s.platform              = :ios, '12.0'
   s.pod_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
   s.user_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
+  s.pod_target_xcconfig = { "ONLY_ACTIVE_ARCH" => "YES" }
   s.vendored_frameworks   = 'Flutter.xcframework'
 end

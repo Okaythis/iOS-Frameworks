@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'PSAApp'
-  s.version               = '1.0.2'
+  s.version               = '1.0.3'
   s.summary               = 'App Framework'
   s.description           = <<-DESC
   This is the compiled UI module for Okaythis SDK
@@ -40,6 +40,7 @@ LICENSE
   s.ios.deployment_target = '10.0'
   s.pod_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
   s.user_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
+  s.pod_target_xcconfig = { "ONLY_ACTIVE_ARCH" => "YES" }
   s.vendored_frameworks   = 'App.xcframework'
 
 end
