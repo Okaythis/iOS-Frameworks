@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'PSAPluginRegistrant'
-  s.version               = '1.1.1'
+  s.version               = '1.1.2'
   s.summary               = 'App Framework'
   s.description           = <<-DESC
   This is the compiled UI module for Okaythis SDK
