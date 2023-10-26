@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'PSAPathProvider'
-  s.version               = '1.1.10'
+  s.version               = '1.8.3'
   s.summary               = 'App Framework'
   s.description           = <<-DESC
   This is the compiled UI module for Okaythis SDK
